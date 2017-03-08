@@ -1,10 +1,10 @@
 package Sorting;
 
 public class PrintOperator {
-	public static void Print(int[] array) {
-		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i]+" ");
+	public static<E> void Print(E[] array) {
+		for (E element:array) {
+			System.out.printf( "%s ", element );
 		}
 		System.out.println();
-	}
+	}	
 }
