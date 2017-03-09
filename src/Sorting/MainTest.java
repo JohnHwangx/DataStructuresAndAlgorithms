@@ -12,7 +12,9 @@ public class MainTest {
 		System.out.println("After sort:");
 //		InsertSort.insertionSort(characters);//Straight Insert Sort
 //		ExchangeSort.BubbleSort(A);//Bubble Sort
-		ExchangeSort.bubbleSort(characters);
+//		ExchangeSort.bubbleSort(characters);
+//		SelectSort.SelectionSort(A);
+		SelectSort.selectionSort(characters);
 	}
 	
 }
