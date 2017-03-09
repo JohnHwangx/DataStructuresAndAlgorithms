@@ -35,4 +35,42 @@ public class InsertSort {
 			PrintOperator.Print(array);
 		}
 	}
+
+	public static void ShellSort(Integer[] A) {
+		int i, j;
+		int temp;
+		int d = A.length / 2;
+		while (d > 0) {
+			for (i = d; i < A.length; i++) {
+				temp = A[i];
+				j = i - d;
+				while (j >= 0 && A[j] > temp) {
+					A[j + d] = A[j];
+					j = j - d;
+				}
+				A[j + d] = temp;
+			}
+			d = d / 2;
+			PrintOperator.Print(A);
+		}
+	}
+
+	public static <E extends Comparable<E>> void shellSort(E[] array) {
+		int i, j, n = array.length;
+		E temp;
+		int d = n / 2;
+		while (d > 0) {
+			for (i = d; i < n; i++) {
+				temp = array[i];
+				j = i - d;
+				while (j >= 0 && temp.compareTo(array[j]) < 0) {
+					array[j + d] = array[j];
+					j = j - d;
+				}
+				array[j + d] = temp;
+			}
+			d = d / 2;
+			PrintOperator.Print(array);
+		}
+	}
 }

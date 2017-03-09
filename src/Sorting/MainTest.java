@@ -11,10 +11,12 @@ public class MainTest {
 		
 		System.out.println("After sort:");
 //		InsertSort.insertionSort(characters);//Straight Insert Sort
+//		InsertSort.ShellSort(A);
+		InsertSort.shellSort(characters);
 //		ExchangeSort.BubbleSort(A);//Bubble Sort
 //		ExchangeSort.bubbleSort(characters);
 //		SelectSort.SelectionSort(A);
-		SelectSort.selectionSort(characters);
+//		SelectSort.selectionSort(characters);
 	}
 	
 }
