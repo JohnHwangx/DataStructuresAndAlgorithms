@@ -10,7 +10,9 @@ public class MainTest {
 		PrintOperator.Print(A);
 		
 		System.out.println("After sort:");
-		InsertSort.insertionSort(characters);
+//		InsertSort.insertionSort(characters);//Straight Insert Sort
+//		ExchangeSort.BubbleSort(A);//Bubble Sort
+		ExchangeSort.bubbleSort(characters);
 	}
 	
 }
