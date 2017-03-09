@@ -2,6 +2,9 @@ package Sorting;
 
 public class MainTest {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Before Sort:");
@@ -10,11 +13,15 @@ public class MainTest {
 		PrintOperator.Print(A);
 		
 		System.out.println("After sort:");
-//		InsertSort.insertionSort(characters);//Straight Insert Sort
-//		InsertSort.ShellSort(A);
-		InsertSort.shellSort(characters);
+		
+//		InsertSort.InsertionSort(A);//Straight Insert Sort
+//		InsertSort.insertionSort(characters);//Straight Insert Sort with Generic
+//		InsertSort.ShellSort(A);//Shell Sort
+		InsertSort.shellSort(characters);//Shell sort with Generic
+		
 //		ExchangeSort.BubbleSort(A);//Bubble Sort
 //		ExchangeSort.bubbleSort(characters);
+		
 //		SelectSort.SelectionSort(A);
 //		SelectSort.selectionSort(characters);
 	}
