@@ -68,7 +68,7 @@ public class ExchangeSort {
 				--high;
 			}
 			A[low] = A[high];
-			
+
 			while (low < high && A[low] <= pivot) {
 				++low;
 			}
@@ -77,37 +77,37 @@ public class ExchangeSort {
 		A[low] = pivot;
 		return low;
 	}
-	
-	public static<E extends Comparable<E>> void quickSort(E[] array) {
+
+	public static <E extends Comparable<E>> void quickSort(E[] array) {
 		System.out.println("Quick Sort:");
-		int low=0,high=array.length-1;
-		quickSort(array,low,high);
+		int low = 0, high = array.length - 1;
+		quickSort(array, low, high);
 	}
 
-	private static<E extends Comparable<E>> void quickSort(E[] array, int low, int high) {
+	private static <E extends Comparable<E>> void quickSort(E[] array, int low, int high) {
 		// TODO Auto-generated method stub
-		if (low<high) {
-			int pivot=getPosition(array, low, high);
-			quickSort(array, low, pivot-1);
-			quickSort(array, pivot+1, high);
+		if (low < high) {
+			int pivot = getPosition(array, low, high);
+			quickSort(array, low, pivot - 1);
+			quickSort(array, pivot + 1, high);
 		}
 		PrintOperator.Print(array);
 	}
 
-	private static<E extends Comparable<E>> int getPosition(E[] array, int low, int high) {
+	private static <E extends Comparable<E>> int getPosition(E[] array, int low, int high) {
 		// TODO Auto-generated method stub
-		E pivot=array[low];
-		while (low<high) {
-			while (low<high&&array[high].compareTo(pivot)>=0) {
+		E pivot = array[low];
+		while (low < high) {
+			while (low < high && array[high].compareTo(pivot) >= 0) {
 				--high;
 			}
-			array[low]=array[high];
-			while (low<high&&array[low].compareTo(pivot)<=0) {
+			array[low] = array[high];
+			while (low < high && array[low].compareTo(pivot) <= 0) {
 				++low;
 			}
-			array[high]=array[low];
+			array[high] = array[low];
 		}
-		array[low]=pivot;
+		array[low] = pivot;
 		return low;
 	}
 }
