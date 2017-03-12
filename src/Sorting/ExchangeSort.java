@@ -102,6 +102,7 @@ public class ExchangeSort {
 				--high;
 			}
 			array[low] = array[high];
+			
 			while (low < high && array[low].compareTo(pivot) <= 0) {
 				++low;
 			}
