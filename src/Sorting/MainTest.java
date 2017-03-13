@@ -22,10 +22,11 @@ public class MainTest {
 //		ExchangeSort.BubbleSort(A);//Bubble Sort
 //		ExchangeSort.bubbleSort(characters);
 //		ExchangeSort.QuickSort(A);
-		ExchangeSort.quickSort(characters);
+//		ExchangeSort.quickSort(characters);
 		
 //		SelectSort.SelectionSort(A);
 //		SelectSort.selectionSort(characters);
+		SelectSort.HeapSort(A);
 	}
 	
 }
