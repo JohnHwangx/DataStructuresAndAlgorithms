@@ -27,7 +27,9 @@ public class MainTest {
 //		SelectSort.SelectionSort(A);
 //		SelectSort.selectionSort(characters);
 //		SelectSort.HeapSort(A);
-		SelectSort.heapSort(characters);
+//		SelectSort.heapSort(characters);
+		
+		MergeSort.sort(A);
 	}
 	
 }
