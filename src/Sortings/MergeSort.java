@@ -1,4 +1,4 @@
-package sorting;
+package Sortings;
 
 public class MergeSort {
 //	private static Integer[] Aux; // auxiliary array for merges

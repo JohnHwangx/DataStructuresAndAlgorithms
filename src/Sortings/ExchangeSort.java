@@ -1,6 +1,6 @@
-package sorting;
+package Sortings;
 
-public class ExchangeSort implements Sort{
+public class ExchangeSort{
 	public static void BubbleSort(Integer[] A) {
 		System.out.println("Bubble Sort");
 		int i, j;
@@ -110,11 +110,5 @@ public class ExchangeSort implements Sort{
 		}
 		array[low] = pivot;
 		return low;
-	}
-
-	@Override
-	public <E> void sort(E[] array) {
-		// TODO Auto-generated method stub
-		
 	}
 }

@@ -1,4 +1,4 @@
-package sorting;
+package Sortings;
 
 import org.ietf.jgss.Oid;
 

@@ -1,4 +1,4 @@
-package sorting;
+package mainTest;
 
 public class PrintOperator {
 	public static<E> void Print(E[] array) {

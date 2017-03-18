@@ -1,4 +1,4 @@
-package sorting;
+package Sortings;
 
 public class MainTest {
 
@@ -31,6 +31,7 @@ public class MainTest {
 		
 //		MergeSort.Sort(A);
 		MergeSort.sort(characters);
+		PrintOperator.Print(characters);
 	}
 	
 }

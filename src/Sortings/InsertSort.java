@@ -1,4 +1,4 @@
-package sorting;
+package Sortings;
 
 public class InsertSort {
 	public InsertSort() {
