@@ -1,7 +1,5 @@
 package sorting;
 
-import Sortings.PrintOperator;
-
 public class QuickSort implements Sort {
 
 	@Override
@@ -20,7 +18,6 @@ public class QuickSort implements Sort {
 			quickSort(array, low, pivot - 1);
 			quickSort(array, pivot + 1, high);
 		}
-		PrintOperator.Print(array);
 	}
 
 	private static <E extends Comparable<E>> int getPosition(E[] array, int low, int high) {
