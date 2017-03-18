@@ -1,4 +1,4 @@
-package Sorting;
+package sorting;
 
 public class MainTest {
 
@@ -29,7 +29,8 @@ public class MainTest {
 //		SelectSort.HeapSort(A);
 //		SelectSort.heapSort(characters);
 		
-		MergeSort.sort(A);
+//		MergeSort.Sort(A);
+		MergeSort.sort(characters);
 	}
 	
 }

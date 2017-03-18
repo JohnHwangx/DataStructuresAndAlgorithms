@@ -1,4 +1,4 @@
-package Sorting;
+package sorting;
 
 public class ExchangeSort {
 	public static void BubbleSort(Integer[] A) {
