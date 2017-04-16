@@ -3,7 +3,7 @@ package searching;
 import java.util.Iterator;
 import java.util.TreeMap;
 
-public class SymbolTable<Key, Value> implements Iterable<Key> {
+public class SymbolTable<Key extends Comparable<Key>, Value> implements Iterable<Key> {
 	private TreeMap<Key, Value> st;
 
 	public SymbolTable() {
